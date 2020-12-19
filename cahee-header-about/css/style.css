@@ -3,44 +3,21 @@ body {
     font-weight: 300;
 }
 
-.section--blog {
-    padding: 100px 0 120px;
-    background-color: #b07cf7;
-}
-
-.title {
-    font-size: 90px;
-    color: #fff;
-    margin-bottom: 30px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.title__subtitle {
-    line-height: 1.47;
-    font-size: 17px;
-    margin-bottom: 47px;
-    color: #fff;
-    max-width: 574px;
-    margin: 0 auto 47px;
-    text-align: center;
-}
-
-.link {
+.data-tab {
     color: #fff;
     position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     overflow: hidden;
-    box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-.link img {
+.data-tab img {
     width: 100%;
 }
 
-.link:before {
+.data-tab:before {
     content: '';
     width: 100%;
     height: 100%;
@@ -49,33 +26,33 @@ body {
     opacity: 0;
 }
 
-.link:hover:before {
+.data-tab:hover:before {
     opacity: 1;
 }
 
-.link:hover .date {
+.data-tab:hover .data-tab__date {
     top: 30px;
     left: 30px;
 }
 
-.link:hover .content {
+.data-tab:hover .data-tab__content {
     bottom: 30px;
     left: 30px;
 }
 
-.date,
-.content {
+.data-tab__date,
+.data-tab__content {
     position: absolute;
     color: #fff;
     transition: all 0.5s;
 }
 
-.date {
+.data-tab__date {
     top: -30px;
     left: -30px;
 }
 
-.content {
+.data-tab__content {
     bottom: -100px;
     left: -60px;
 }
@@ -139,7 +116,7 @@ body {
 /* Button style start */
 .button {
     padding: 14px 25px;
-    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
     font-size: 20px;
     color: #fff;
     border: none;
@@ -148,6 +125,10 @@ body {
 
 .button--primary {
     background-color: #ff6033;
+}
+
+.button--danger {
+    background-color: #f72b3b;
 }
 
 /* Button style end */
@@ -190,27 +171,13 @@ body {
 
 /* Header style end */
 
-/* Blog style end */
-.blog {
+/* Blog style start */
+.section--blog {
     padding: 100px 0 120px;
     background-color: #b07cf7;
 }
 
-.btn {
-    display: block;
-    width: 200px;
-    height: 55px;
-    margin: 50px auto 120px auto;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 0;
-    background-color: #f72b3b;
-    font-size: 20px;
-    line-height: 1.25;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.date {
+.data-tab__date {
     width: 60px;
     height: 60px;
     background-color: #262626;
@@ -220,18 +187,18 @@ body {
     color: #ffffff;
 }
 
-.date:before {
+.data-tab__date:before {
     content: '';
     width: 100%;
     height: 100%;
 }
 
-.content h4 {
+.data-tab__content h4 {
     font-size: 22px;
     font-weight: 700;
 }
 
-.day {
+.data-tab__date > div {
     font-size: 22px;
     font-weight: 700;
     line-height: 1.07;
@@ -239,7 +206,7 @@ body {
     color: #ffffff;
 }
 
-.day-num {
+.data-tab__date span {
     font-size: 30px;
 }
 
