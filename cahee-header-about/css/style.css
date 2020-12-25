@@ -171,6 +171,71 @@ body {
 
 /* Header style end */
 
+/*Services style start*/
+.section--services {
+    height: 790px;
+    background: #70bfff;
+}
+
+.services__cont {
+    width: 42%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    float: left;
+}
+
+.services__cont > a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.services__tab {
+    width: 400px;
+    height: 100px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1%;
+    position: relative;
+}
+
+.services__tab .col-3 {
+    line-height: 100px;
+    font-size: 40px;
+    border-left: 1px solid #9d9d9d;
+}
+
+.services__title {
+    display: inline-block;
+}
+
+.services__info {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 58%;
+}
+
+.services__title {
+    height: 600px;
+    width: 600px;
+    background-image: url("../images/img copy.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Services style end*/
+
 /* Blog style start */
 .section--blog {
     padding: 100px 0 120px;
