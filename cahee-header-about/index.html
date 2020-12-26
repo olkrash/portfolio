@@ -26,7 +26,7 @@
                         <a href="#" class="nav__link">HOME</a>
                         <a href="#about" class="nav__link">ABOUT</a>
                         <a href="#services" class="nav__link">SERVICES</a>
-                        <a href="#" class="nav__link">GALLERY</a>
+                        <a href="#gallery" class="nav__link">GALLERY</a>
                         <a href="#blog" class="nav__link">BLOG</a>
                         <a href="#contact" class="nav__link">CONTACT</a>
                     </nav>
@@ -113,57 +113,109 @@
             <h2 class="services__title section__title section__title--secondary">Our Services</h2>
         </div>
     </section>
+    <section class="section__gallery section__blog" id="gallery">
+        <h2 class="section__title section__title--secondary text-center mb-5 text-dark">Gallery</h2>
+        <div class="d-flex justify-content-center">
+            <p class="w-50 text-center section__description section__description--light text-dark">Consectetur
+                adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                <br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
+        <div class="gallery__slider container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="slider__tab slider__tab1"></div>
+                </div>
+                <div class="col-4">
+                    <div class="slider__tab slider__tab2"></div>
+                    <div class="slider__tab slider__tab3 mt-3"></div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-6">
+                    <div class="slider__tab slider__tab4"></div>
+                </div>
+                <div class="col-6">
+                    <div class="slider__tab slider__tab5"></div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <button type="button" class="button button--gallery">VIEW MORE</button>
+        </div>
+    </section>
+    <section class="section__subscribe">
+        <div class="section__content container">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="section__title section__title--primary subscribe__title">Subscribe To Us</h1>
+                    <p class="section__description section__description--dark">Dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam.</p>
+                    <input type="text" placeholder="Your email address" name="mail" class="subscribe__email" required>
+                </div>
+                <div class="d-flex  align-items-end col-6 subscribe__button">
+                    <button type="button" class="button button--subscribe">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section section--blog" id="blog">
         <div class="container">
+            <p class="w-50 text-center section__description section__description--light">
             <h2 class="section__title section__title--secondary text-center mb-5">Blog</h2>
             <div class="d-flex justify-content-center">
-                <p class="w-50 text-center section__description section__description--light">Dolore magna aliqua. Ut
+                <p class="w-50 text-center section__description section__description--light ">Dolore magna aliqua. Ut
                     enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    veniam, quis nostrud excitation <br> ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptatevelit.
                 </p>
             </div>
-            <div class="row">
-                <div class="col-4">
-                    <a href="#" class="data-tab">
-                        <img src="images/blog-1.png" alt="blog-1">
-                        <div class="data-tab__date">
-                            <div><span>20</span> NOV</div>
-                        </div>
-                        <div class="data-tab__content">
-                            <h4>Green Smoothies: Too Much of a Good Thing?</h4>
-                            <p>By Auskteez - 2 hours ago</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="#" class="data-tab">
-                        <img src="images/blog-2.png" alt="blog-2">
-                        <div class="data-tab__date">
-                            <div><span>14</span> NOV</div>
-                        </div>
-                        <div class="data-tab__content">
-                            <h4>Growing Food and a “Thirst” for Innovation</h4>
-                            <p>By Auskteez - 3 hours ago</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="#" class="data-tab">
-                        <img src="images/blog-3.png" alt="blog-3">
-                        <div class="data-tab__date">
-                            <div><span>10</span> NOV</div>
-                        </div>
-                        <div class="data-tab__content">
-                            <h4>Pesticides & Food: What You Need to Know</h4>
-                            <p>By Auskteez - 6 hours ago</p>
-                        </div>
-                    </a>
-                </div>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="#" class="data-tab">
+                    <img src="images/blog-1.png" alt="blog-1">
+                    <div class="data-tab__date">
+                        <div><span>20</span> NOV</div>
+                    </div>
+                    <div class="data-tab__content">
+                        <h4>Green Smoothies: Too Much of a Good Thing?</h4>
+                        <p>By Auskteez - 2 hours ago</p>
+                    </div>
+                </a>
             </div>
-            <div class="d-flex justify-content-center mt-5">
-                <button type="button" class="button button--danger">VIEW MORE</button>
+            <div class="col-4">
+                <a href="#" class="data-tab">
+                    <img src="images/blog-2.png" alt="blog-2">
+                    <div class="data-tab__date">
+                        <div><span>14</span> NOV</div>
+                    </div>
+                    <div class="data-tab__content">
+                        <h4>Growing Food and a “Thirst” for Innovation</h4>
+                        <p>By Auskteez - 3 hours ago</p>
+                    </div>
+                </a>
             </div>
+            <div class="col-4">
+                <a href="#" class="data-tab">
+                    <img src="images/blog-3.png" alt="blog-3">
+                    <div class="data-tab__date">
+                        <div><span>10</span> NOV</div>
+                    </div>
+                    <div class="data-tab__content">
+                        <h4>Pesticides & Food: What You Need to Know</h4>
+                        <p>By Auskteez - 6 hours ago</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <button type="button" class="button button--danger">VIEW MORE</button>
+        </div>
         </div>
     </section>
     <section class="section section--contact" id="contact">
