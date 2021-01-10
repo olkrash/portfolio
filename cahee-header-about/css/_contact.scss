@@ -1,0 +1,72 @@
+.section--contact {
+  background: url('../images/contact-bg.png') no-repeat center/cover;
+  height: 866px;
+  padding: 100px 0 48px;
+}
+
+.contact__info {
+  margin-left: 75px;
+}
+
+.contact__text {
+  color: #262626;
+}
+
+.contact__desc {
+  width: 350px;
+}
+
+.contact__title,
+.contact__add {
+  color: #262626;
+}
+
+.contact__title {
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.contact__add {
+
+}
+
+.contact__form {
+  width: 500px;
+  margin-left: 60px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 500px;
+  margin-bottom: 3%;
+  opacity: 0.5;
+  background-color: #00c4c4;
+  border: none;
+  color: white;
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  opacity: 1;
+  outline: none;
+  box-shadow: -5px 0 0 0 #355b82;
+  width: 495px;
+  margin-left: 5px;
+}
+
+input {
+  height: 50px;
+}
+
+textarea {
+  height: 250px;
+}
+
+::placeholder {
+  font-size: 15px;
+  line-height: 25px;
+  color: white;
+  text-align: left;
+  padding-left: 3%;
+}

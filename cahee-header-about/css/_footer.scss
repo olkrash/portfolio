@@ -1,0 +1,39 @@
+.footer {
+  background-color: #262626;
+  height: 90px;;
+  .footer__col1,
+  .footer__col2,
+  .footer__col3 {
+    margin-top: 3%;
+  }
+
+  .footer__col1,
+  .footer__col3 {
+    color: #b9b9b9;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .footer__col3 {
+    text-align: right;
+  }
+
+  .footer__col1 {
+    text-align: right;
+  }
+
+  .footer__col3 > span {
+    color: red;
+  }
+
+  .footer__col2 {
+    margin-left: 20%;
+  }
+
+  .logo--white {
+    color: #b9b9b9;
+    width: 64px;
+    height: 27px;
+    /*margin-left: 35%;*/
+  }}
+

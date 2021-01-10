@@ -1,60 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 258px;
+}
+.header .nav__link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #262626;
+  text-decoration: none;
+  margin-left: 35px;
+  position: relative;
+}
+.header .nav__link:hover {
+  color: #262626;
+}
+.header .nav__link::before {
+  content: "";
+  width: 0;
+  background-color: #ff6033;
+  height: 3px;
+  position: absolute;
+  top: -9px;
+  transition: all 0.5s;
+}
+.header .nav__link:hover::before {
+  content: "";
+  width: 100%;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-}
-
-.data-tab {
-  color: #fff;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  overflow: hidden;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
-}
-
-.data-tab img {
-  width: 100%;
-}
-
-.data-tab:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1));
-  opacity: 0;
-}
-
-.data-tab:hover:before {
-  opacity: 1;
-}
-
-.data-tab:hover .data-tab__date {
-  top: 30px;
-  left: 30px;
-}
-
-.data-tab:hover .data-tab__content {
-  bottom: 30px;
-  left: 30px;
-}
-
-.data-tab__date,
-.data-tab__content {
-  position: absolute;
-  color: #fff;
-  transition: all 0.5s;
-}
-
-.data-tab__date {
-  top: -30px;
-  left: -30px;
-}
-
-.data-tab__content {
-  bottom: -100px;
-  left: -60px;
 }
 
 /* Section style start */
@@ -110,7 +87,6 @@ body {
   left: 50%;
 }
 
-/* Section style end */
 /* Button style start */
 .button {
   padding: 14px 25px;
@@ -129,45 +105,74 @@ body {
   background-color: #f72b3b;
 }
 
-/* Button style end */
-/* Header style start */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 258px;
+.menu-icon {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
 }
 
-.nav__link {
-  font-size: 16px;
-  font-weight: 700;
-  color: #262626;
-  text-decoration: none;
-  margin-left: 35px;
-  position: relative;
-}
-
-.nav__link:hover {
-  color: #262626;
-}
-
-.nav__link::before {
-  content: "";
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
   width: 0;
-  background-color: #ff6033;
-  height: 3px;
-  position: absolute;
-  top: -9px;
-  transition: all 0.5s;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: black;
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
-.nav__link:hover::before {
-  content: "";
+/* Position the content inside the overlay */
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
   width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-/* Header style end */
-/*Services style start*/
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 .section--services {
   height: 790px;
   background: #70bfff;
@@ -230,8 +235,6 @@ body {
   align-items: center;
 }
 
-/*Services style end*/
-/*Gallery style start*/
 .section__gallery {
   height: 1536px;
   background-color: #ffe92f;
@@ -241,7 +244,6 @@ body {
 .slider__tab1 {
   background-image: url("../images/gallery__peach1.png");
   height: 560px;
-  width: 842px;
 }
 
 .slider__tab2 {
@@ -272,8 +274,6 @@ body {
   background-color: #5585a2;
 }
 
-/*Gallery style end*/
-/*Subscribe style end*/
 .section__subscribe {
   height: 500px;
   padding: 100px 0 120px;
@@ -298,8 +298,60 @@ body {
   line-height: 27px;
 }
 
-/*Subscribe style end*/
-/* Blog style start */
+.data-tab {
+  color: #fff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.data-tab img {
+  width: 100%;
+}
+
+.data-tab:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1));
+  opacity: 0;
+}
+
+.data-tab:hover:before {
+  opacity: 1;
+}
+
+.data-tab:hover .data-tab__date {
+  top: 30px;
+  left: 30px;
+}
+
+.data-tab:hover .data-tab__content {
+  bottom: 30px;
+  left: 30px;
+}
+
+.data-tab__date,
+.data-tab__content {
+  position: absolute;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.data-tab__date {
+  top: -60px;
+  left: -30px;
+}
+
+.data-tab__content {
+  bottom: -100px;
+  left: -60px;
+}
+
 .section--blog {
   padding: 100px 0 120px;
   background-color: #b07cf7;
@@ -338,8 +390,6 @@ body {
   font-size: 30px;
 }
 
-/* Blog style end */
-/* Contact style start */
 .section--contact {
   background: url("../images/contact-bg.png") no-repeat center/cover;
   height: 866px;
@@ -409,49 +459,59 @@ textarea {
   padding-left: 3%;
 }
 
-/* Contact style end */
-/* Footer style end */
 .footer {
   background-color: #262626;
   height: 90px;
 }
-
-.footer__col1,
-.footer__col2,
-.footer__col3 {
+.footer .footer__col1,
+.footer .footer__col2,
+.footer .footer__col3 {
   margin-top: 3%;
 }
-
-.footer__col1,
-.footer__col3 {
+.footer .footer__col1,
+.footer .footer__col3 {
   color: #b9b9b9;
   font-size: 16px;
   line-height: 25px;
 }
-
-.footer__col3 {
+.footer .footer__col3 {
   text-align: right;
 }
-
-.footer__col1 {
+.footer .footer__col1 {
   text-align: right;
 }
-
-.footer__col3 > span {
+.footer .footer__col3 > span {
   color: red;
 }
-
-.footer__col2 {
+.footer .footer__col2 {
   margin-left: 20%;
 }
-
-.logo--white {
+.footer .logo--white {
   color: #b9b9b9;
   width: 64px;
   height: 27px;
   /*margin-left: 35%;*/
 }
 
-/* Footer style end */
+@media only screen and (min-width: 992px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

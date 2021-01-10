@@ -1,0 +1,92 @@
+
+.data-tab {
+  color: #fff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.data-tab img {
+  width: 100%;
+}
+
+.data-tab:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1));
+  opacity: 0;
+}
+
+.data-tab:hover:before {
+  opacity: 1;
+}
+
+.data-tab:hover .data-tab__date {
+  top: 30px;
+  left: 30px;
+}
+
+.data-tab:hover .data-tab__content {
+  bottom: 30px;
+  left: 30px;
+}
+
+.data-tab__date,
+.data-tab__content {
+  position: absolute;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.data-tab__date {
+  top: -60px;
+  left: -30px;
+}
+
+.data-tab__content {
+  bottom: -100px;
+  left: -60px;
+}
+
+.section--blog {
+  padding: 100px 0 120px;
+  background-color: #b07cf7;
+}
+
+.data-tab__date {
+  width: 60px;
+  height: 60px;
+  background-color: #262626;
+  top: -60px;
+  left: -30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.data-tab__date:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.data-tab__content h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.data-tab__date > div {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.07;
+  text-align: center;
+  color: #ffffff;
+}
+
+.data-tab__date span {
+  font-size: 30px;
+}
