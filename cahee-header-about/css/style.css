@@ -227,39 +227,37 @@ body {
 }
 
 .section__gallery {
-  height: 1536px;
   background-color: #ffe92f;
   padding: 100px 0 120px;
 }
 
 .slider__tab1 {
-  background-image: url("../images/gallery__peach1.png");
-  background-position: center;
+  background: url("../images/gallery__peach1.png") no-repeat center;
   height: 560px;
 }
 
 .slider__tab2 {
-  background-image: url("../images/blueberry__gallery2.png");
-  background-position: center;
+  background: url("../images/blueberry__gallery2.png") no-repeat center;
   height: 270px;
 }
 
 .slider__tab3 {
-  background-image: url("../images/rasberry__gallery3.png");
-  background-position: center;
+  background: url("../images/rasberry__gallery3.png") no-repeat center;
   height: 270px;
+  margin-top: 20px;
 }
 
 .slider__tab4 {
-  background-image: url("../images/milk__gallery4.png");
-  background-position: center;
+  background: url("../images/milk__gallery4.png") no-repeat center;
   height: 414px;
+  margin-top: 30px;
 }
 
 .slider__tab5 {
-  background-image: url("../images/hurma__gallery--last.png");
-  background-position: center;
+  background: url("../images/hurma__gallery--last.png") no-repeat center;
   height: 414px;
+  margin-top: 30px;
+  margin-left: 5px;
 }
 
 .button--gallery {
@@ -558,6 +556,13 @@ textarea {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slider__tab {
+    background-size: contain;
+    height: 50vh;
+    margin-top: 5vh;
   }
 }
 
