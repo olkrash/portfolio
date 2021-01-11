@@ -1,16 +1,14 @@
 .section--services {
-  height: 790px;
   background: #70bfff;
 }
 
 .services__cont {
-  width: 42%;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  float: left;
+  align-items: center;
 }
 
 .services__cont > a {
@@ -36,26 +34,19 @@
   border-left: 1px solid #9d9d9d;
 }
 
-.services__title {
-  display: inline-block;
-}
-
 .services__info {
-  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 58%;
 }
 
 .services__title {
   height: 600px;
-  width: 600px;
   background-image: url("../images/img copy.png");
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: center;
 }
