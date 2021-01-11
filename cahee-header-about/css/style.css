@@ -403,6 +403,7 @@ body {
 
 .contact__text {
   color: #262626;
+  margin-bottom: 50px;
 }
 
 .contact__desc {
@@ -504,10 +505,6 @@ textarea {
   }
 }
 @media screen and (min-width: 768px) {
-  .section__title {
-    line-height: 1.42;
-  }
-
   .nav {
     display: none;
   }
@@ -515,12 +512,32 @@ textarea {
   .menu-icon {
     display: block;
   }
-}
-@media screen and (min-width: 576px) {
-  .section--header {
-    padding: 0 0 132px;
+
+  .contact__text {
+    margin-bottom: 0;
   }
 
+  .section--blog {
+    padding: 0 0 30px;
+  }
+
+  .contact__title, .contact__add {
+    font-size: 14px;
+  }
+
+  .contact__title {
+    line-height: 14px;
+  }
+
+  .contact__form {
+    margin-left: 0;
+  }
+
+  .footer .footer__col1, .footer .footer__col2, .footer .footer__col3 {
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 576px) {
   .section__title {
     line-height: 1.42;
   }
@@ -550,10 +567,6 @@ textarea {
     font-size: 40px;
     top: 15px;
     right: 35px;
-  }
-
-  .section--contact {
-    height: 145vh;
   }
 }
 
