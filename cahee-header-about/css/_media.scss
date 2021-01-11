@@ -6,17 +6,45 @@
     display: block;
   }
 }
-@media screen and (max-height: 450px) {
+@media screen and (min-width: 768px){
+  .section__title{
+    line-height: 1.42;
+  }
+  .nav{
+    display: none;
+  }
+  .menu-icon{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .section--header{
+    padding: 0 0 132px;
+  }
+  .section__title{
+    line-height: 1.42;
+  }
+  .subscribe__email{
+    margin-bottom: 50px;
+      width: 370px;
+  }
+  .section__gallery{
+    padding: 4px 0 120px;
+  }
+  .nav{
+    display: none;
+  }
+  .menu-icon{
+    display: block;
+  }
+
   .overlay a {font-size: 20px}
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
-}
-@media screen and (max-width: 768px){
-
-}
-@media screen and (max-width: 375px) {
-
-}
+.section--contact{
+  height: 145vh;
+}}
