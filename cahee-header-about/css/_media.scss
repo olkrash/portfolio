@@ -14,6 +14,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .slider__tab {
+    background-size: contain;
+    height: 50vh;
+    margin-top: 5vh;
+  }
   .nav {
     display: none;
   }
@@ -65,7 +70,6 @@
   }
   .subscribe__email {
     margin-bottom: 50px;
-    //width: 370px;
   }
   .section--about {
     padding: 15px 0;
@@ -95,13 +99,5 @@
     font-size: 40px;
     top: 15px;
     right: 35px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .slider__tab {
-    background-size: contain;
-    height: 50vh;
-    margin-top: 5vh;
   }
 }
