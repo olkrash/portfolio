@@ -484,7 +484,7 @@ textarea {
   /*margin-left: 35%;*/
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   .nav {
     display: none;
   }
@@ -492,8 +492,12 @@ textarea {
   .menu-icon {
     display: block;
   }
+
+  .subscribe__email {
+    width: 370px;
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav {
     display: none;
   }
@@ -508,6 +512,10 @@ textarea {
 
   .section--blog {
     padding: 0 0 30px;
+  }
+
+  .subscribe__email {
+    margin-bottom: 50px;
   }
 
   .contact__title, .contact__add {
@@ -526,14 +534,13 @@ textarea {
     margin-top: 2%;
   }
 }
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   .section__title {
     line-height: 1.42;
   }
 
   .subscribe__email {
     margin-bottom: 50px;
-    width: 370px;
   }
 
   .section__gallery {
