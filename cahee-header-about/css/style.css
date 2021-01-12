@@ -496,6 +496,10 @@ textarea {
   .subscribe__email {
     width: 370px;
   }
+
+  .contact__form {
+    margin-left: 15px;
+  }
 }
 @media screen and (max-width: 768px) {
   .nav {
@@ -511,7 +515,20 @@ textarea {
   }
 
   .section--blog {
-    padding: 0 0 30px;
+    padding: 5px 0 30px;
+  }
+
+  .section__title--secondary {
+    margin-top: -13px;
+  }
+
+  .data-tab:hover .data-tab__date {
+    top: 4px;
+    left: 4px;
+  }
+
+  .data-tab__content h4 {
+    font-size: 19px;
   }
 
   .subscribe__email {
@@ -530,17 +547,29 @@ textarea {
     margin-left: 0;
   }
 
+  .contact__info {
+    margin-left: 160px;
+  }
+
   .footer .footer__col1, .footer .footer__col2, .footer .footer__col3 {
     margin-top: 2%;
   }
 }
 @media screen and (max-width: 576px) {
+  .section--header {
+    padding: 50px 0 178px;
+  }
+
   .section__title {
     line-height: 1.42;
   }
 
   .subscribe__email {
     margin-bottom: 50px;
+  }
+
+  .section--about {
+    padding: 15px 0;
   }
 
   .section__gallery {
@@ -553,6 +582,18 @@ textarea {
 
   .menu-icon {
     display: block;
+  }
+
+  .section__title--secondary {
+    font-size: 75px;
+  }
+
+  .section__description {
+    margin-bottom: 5px;
+  }
+
+  .section--contact {
+    padding: 40px 0 25px;
   }
 
   .overlay a {
